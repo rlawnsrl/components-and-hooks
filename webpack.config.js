@@ -11,7 +11,7 @@ module.exports = (env, argv) => {
     mode: prod ? "production" : "development",
     devtool: prod ? "hidden-source-map" : "eval",
     entry: {
-      home: "./src/index.tsx",
+      home: "./src/app/index.tsx",
     },
     output: {
       path: path.join(__dirname, "/dist"),
@@ -26,6 +26,9 @@ module.exports = (env, argv) => {
       watchFiles: ["src/**/*"],
     },
     resolve: {
+      alias: {
+        "@src": path.resolve(__dirname, "src/"),
+      },
       extensions: [".js", ".jsx", ".ts", ".tsx"],
     },
     module: {
