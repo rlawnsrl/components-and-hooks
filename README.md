@@ -4,6 +4,8 @@
 https://nomadcoders.co/react-hooks-introduction
 
 #### 예제 확인
+```npm run dev```로 실행
+
 ```components-and-hooks\src\pages\home\Home.tsx``` 에서
 
 컴포넌트 변경해가면서 확인
