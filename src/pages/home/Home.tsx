@@ -1,5 +1,12 @@
-import { UseClick, UseConfirm, UseInput, UseTabs, UseTitle } from "../hookTest";
+import {
+  UseClick,
+  UseConfirm,
+  UseFileAsURL,
+  UseInput,
+  UseTabs,
+  UseTitle,
+} from "../hookTest";
 
 export const Home = () => {
-  return <UseConfirm />;
+  return <UseFileAsURL />;
 };
